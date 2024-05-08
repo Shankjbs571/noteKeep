@@ -1,1 +1,11 @@
+
 myenv
+
+
+#SERVER IGNORES
+server/db.sqlite3
+server/keep_note_app/migrations
+
+
+#FRONTEND IGNORES
+
