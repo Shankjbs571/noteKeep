@@ -4,5 +4,6 @@ This document will be used to track ideas and features to add to this project. A
 
 ## Ideas
 - [ ] Implement a dark mode for the app.
+- [ ] Implement ToDo Task feature inside Note template itself 
 
 
