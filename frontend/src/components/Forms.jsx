@@ -6,7 +6,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 // import "../styles/Form.css"
-// import LoadingIndicator from "./LoadingIndicator";
+import Loading from "./Loading";
 
 function Forms({ route, method }) {
     const [username, setUsername] = useState("");
@@ -98,6 +98,7 @@ function Forms({ route, method }) {
                                 <label htmlFor="terms" className="font-light text-gray-500 dark:text-gray-300">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
                             </div>
                         </div> */} 
+                        {loading && <Loading />}
                         <button
                         type="submit"
                         className="form-button w-full text-white bg-orange-500 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
