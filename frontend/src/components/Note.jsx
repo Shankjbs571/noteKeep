@@ -28,3 +28,4 @@ export default function Note({ bgColor, note, onDelete }) {
         </div>
      );
 }
+// this is firebase branch
